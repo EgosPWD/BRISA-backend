@@ -3,6 +3,25 @@
 Backend API REST desarrollado en FastAPI para el sistema de gestión institucional BRISA de la Universidad Católica Boliviana. 
 Arquitectura modular diseñada para desarrollo colaborativo entre múltiples equipos.
 
+## 📚 Documentación Completa
+
+**[Ver Documentación Completa →](docs/README.md)**
+
+La documentación completa del proyecto incluye:
+
+- **[Documentación de API](docs/API_DOCUMENTATION.md)** - Referencia completa de todos los endpoints, ejemplos de uso
+- **[Guía de Desarrollo](docs/GUIA_DESARROLLADOR.md)** - Guía paso a paso para desarrolladores con ejemplos de código
+- **[Arquitectura del Sistema](docs/ARQUITECTURA.md)** - Diseño técnico, patrones y flujos de datos
+- **[Base de Datos](docs/DATABASE.md)** - Esquema completo, relaciones, migraciones
+- **[Despliegue](docs/DEPLOYMENT.md)** - Guía de despliegue para desarrollo, producción y Docker
+
+### Accesos Rápidos
+
+- 📖 **Documentación Interactiva**: http://localhost:8000/docs (cuando el servidor está corriendo)
+- 🔐 **Autenticación**: Sistema JWT - Ver [API Docs](docs/API_DOCUMENTATION.md#autenticación)
+- 🏗️ **Arquitectura**: Modelo MVC en capas - Ver [Arquitectura](docs/ARQUITECTURA.md)
+- 💾 **Base de Datos**: MySQL 8.0+ - Ver [Database Docs](docs/DATABASE.md)
+
 ## 🏗️ Estructura del Proyecto
 
 ```
