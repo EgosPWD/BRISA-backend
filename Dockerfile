@@ -1,8 +1,7 @@
-FROM python:3.13-slim
+FROM python:3.12-slim
 
 WORKDIR /app
 
-# Instalar dependencias del sistema
 RUN apt-get update && apt-get install -y \
     gcc \
     g++ \
@@ -11,16 +10,13 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Copiar requirements primero para mejor caching
 COPY requirements.txt .
 
-# Instalar dependencias Python
 RUN pip install --no-cache-dir --upgrade pip setuptools wheel && \
     pip install --no-cache-dir -r requirements.txt
 
-# Copiar el resto del código
 COPY . .
 
-EXPOSE 8000
+EXPOSE 5021
 
-CMD ["uvicorn", "run:app", "--host", "0.0.0.0", "--port", "8000", "--reload"]
+CMD ["uvicorn", "run:app", "--host", "0.0.0.0", "--port", "5021"]
